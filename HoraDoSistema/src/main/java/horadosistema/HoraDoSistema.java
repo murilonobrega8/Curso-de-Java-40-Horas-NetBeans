@@ -5,6 +5,8 @@
 
 package horadosistema;
 
+import java.util.Date;
+
 /**
  *
  * @author murilonobrega8
@@ -12,6 +14,8 @@ package horadosistema;
 public class HoraDoSistema {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Date relogio = new Date();
+        System.out.println("A hora do Sistema é");
+        System.out.println(relogio.toString());
     }
 }
