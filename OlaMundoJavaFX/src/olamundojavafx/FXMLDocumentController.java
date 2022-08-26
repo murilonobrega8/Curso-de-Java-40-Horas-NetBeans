@@ -24,7 +24,7 @@ public class FXMLDocumentController implements Initializable {
     
     @FXML
     private void clicouBotao(ActionEvent event) {
-        lblMensagem.setText("Olá, Mundo!");
+        lblMensagem.setText("Olá, Mundo! Agora vai!");
     }
     
     @Override
