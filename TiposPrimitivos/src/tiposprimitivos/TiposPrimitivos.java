@@ -4,6 +4,8 @@
  */
 package tiposprimitivos;
 
+import java.util.Scanner;
+
 /**
  *
  * @author murilonobrega8
@@ -21,6 +23,7 @@ public class TiposPrimitivos {
         System.out.printf("A nota é %.2f \n", nota);
         System.out.printf("A nota de %s é %.4f \n", nome, nota);
         System.out.format("A nota %.3f é de %s \n", nota, nome);
+        Scanner teclado = new Scanner(System.in);
     }
     
 }
