@@ -30,11 +30,11 @@ public class TelaValores extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         txtNum = new javax.swing.JTextField();
         txtDen = new javax.swing.JTextField();
-        btnCalcular = new javax.swing.JButton();
+        btnDividir = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         lblDiv = new javax.swing.JLabel();
-        lblRes = new javax.swing.JLabel();
+        lblResto = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -48,23 +48,23 @@ public class TelaValores extends javax.swing.JFrame {
             }
         });
 
-        btnCalcular.setBackground(new java.awt.Color(204, 204, 204));
-        btnCalcular.setFont(new java.awt.Font("Liberation Sans", 1, 14)); // NOI18N
-        btnCalcular.setText("Calcular");
-        btnCalcular.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnCalcular.addActionListener(new java.awt.event.ActionListener() {
+        btnDividir.setBackground(new java.awt.Color(204, 204, 204));
+        btnDividir.setFont(new java.awt.Font("Liberation Sans", 1, 14)); // NOI18N
+        btnDividir.setText("Dividir");
+        btnDividir.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnDividir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCalcularActionPerformed(evt);
+                btnDividirActionPerformed(evt);
             }
         });
 
         jLabel3.setText("Divisão");
 
-        jLabel4.setText("Raiz");
+        jLabel4.setText("Resto");
 
         lblDiv.setText("0");
 
-        lblRes.setText("0");
+        lblResto.setText("0");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -80,13 +80,13 @@ public class TelaValores extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblDiv, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(lblRes, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lblResto, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(txtDen, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtNum, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(14, 14, 14))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnCalcular, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnDividir, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(47, 47, 47))
         );
         layout.setVerticalGroup(
@@ -101,7 +101,7 @@ public class TelaValores extends javax.swing.JFrame {
                     .addComponent(jLabel2)
                     .addComponent(txtDen, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(btnCalcular, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnDividir, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
@@ -109,7 +109,7 @@ public class TelaValores extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(lblRes))
+                    .addComponent(lblResto))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -120,15 +120,15 @@ public class TelaValores extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtNumActionPerformed
 
-    private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularActionPerformed
+    private void btnDividirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDividirActionPerformed
         // TODO add your handling code here:
         int n = Integer.parseInt(txtNum.getText());
         int d = Integer.parseInt(txtDen.getText());
         float div = n / d;
-        float res = (float) Math.sqrt(n);
+        float res = n % d;
         lblDiv.setText(Float.toString(div));
-        lblRes.setText(Float.toString(res));
-    }//GEN-LAST:event_btnCalcularActionPerformed
+        lblResto.setText(Float.toString(res));
+    }//GEN-LAST:event_btnDividirActionPerformed
 
     /**
      * @param args the command line arguments
@@ -166,13 +166,13 @@ public class TelaValores extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnCalcular;
+    private javax.swing.JButton btnDividir;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel lblDiv;
-    private javax.swing.JLabel lblRes;
+    private javax.swing.JLabel lblResto;
     private javax.swing.JTextField txtDen;
     private javax.swing.JTextField txtNum;
     // End of variables declaration//GEN-END:variables

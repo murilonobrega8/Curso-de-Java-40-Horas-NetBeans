@@ -51,6 +51,31 @@ public class OperadoresAritmeticos {
         int xb = 4;
         xb *= 2; // xb = xb*2
         System.out.println("Se x=4, o resultado de x*=2 (x=x*2) é: " + xb);
+        
+        float v = 8.9f;
+        int ar = (int) Math.floor(v);
+        System.out.println("Usando Math.floor, 8,9 vira: " + ar);
+        
+        float v2 = 8.3f;
+        int ar2 = (int) Math.ceil(v2);
+        System.out.format("Usando Math.ceil, %.1f vira: %d \n", v2, ar2);
+        
+        float v3 = 8.5f;
+        float v4 = 8.4f;
+        int ar3 = (int) Math.round(v3);
+        int ar4 = (int) Math.round(v4);
+        System.out.format("Usando Math.round, %.1f vira: %d. E %.1f vira: %d. \n", v3, ar3, v4, ar4);
+        
+        double ale = Math.random(); //gera um número aleatório de 0.0 a 1.0
+        System.out.println(ale);
+        
+        double ale2 = Math.random(); //gera um número aleatório de 5 a 10
+        int n = (int) (5 + ale2 * (10-5));
+        System.out.println(n);
+        
+        double ale3 = Math.random(); //gera um número aleatório de 15 a 50
+        int nb = (int) (15 + ale3 * (50-15));
+        System.out.println(nb);
     }
     
 }
