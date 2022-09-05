@@ -110,7 +110,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblSituacao">
       <Properties>
-        <Property name="text" type="java.lang.String" value="&lt;vazio&gt;"/>
+        <Property name="text" type="java.lang.String" value="-"/>
       </Properties>
     </Component>
   </SubComponents>

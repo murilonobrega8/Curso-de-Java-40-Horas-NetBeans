@@ -51,7 +51,7 @@ public class TelaIdade extends javax.swing.JFrame {
 
         lblIdade.setText("0");
 
-        lblSituacao.setText("-");
+        lblSituacao.setText("<vazio>");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -106,7 +106,7 @@ public class TelaIdade extends javax.swing.JFrame {
         int ano = Integer.parseInt(txtAno.getText());
         int idade = 2022 - ano;
         lblIdade.setText(Integer.toString(idade));
-        String sit = ((idade>=16 && idade<18) || (idade>70))?"VOTO OPCIONAL":"VOTO OBRIGATÓRIO";
+        String sit = (idade>=18)?"MAIOR":"MENOR";
         lblSituacao.setText(sit);
     }//GEN-LAST:event_btnCalcActionPerformed
 
