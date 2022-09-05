@@ -11,12 +11,12 @@ import java.awt.Toolkit;
  *
  * @author murilonobrega8
  */
-public class TelaResolucao extends javax.swing.JFrame {
+public class Frame0_TelaResolucao extends javax.swing.JFrame {
 
     /**
      * Creates new form TelaRelogio
      */
-    public TelaResolucao() {
+    public Frame0_TelaResolucao() {
         initComponents();
         this.setLocationRelativeTo(null);
     }  
@@ -131,8 +131,8 @@ public class TelaResolucao extends javax.swing.JFrame {
     private void btnVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVoltarActionPerformed
         // TODO add your handling code here:
         this.dispose();
-        new TelaIdioma().show();
-        new TelaIdioma().setLocationRelativeTo(null);
+        new Frame0_TelaIdioma().show();
+        new Frame0_TelaIdioma().setLocationRelativeTo(null);
         
     }//GEN-LAST:event_btnVoltarActionPerformed
 
@@ -158,21 +158,27 @@ public class TelaResolucao extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(TelaResolucao.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Frame0_TelaResolucao.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(TelaResolucao.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Frame0_TelaResolucao.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(TelaResolucao.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Frame0_TelaResolucao.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(TelaResolucao.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Frame0_TelaResolucao.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new TelaResolucao().setVisible(true);
+                new Frame0_TelaResolucao().setVisible(true);
             }
         });
     }

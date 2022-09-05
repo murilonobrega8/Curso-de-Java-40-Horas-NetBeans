@@ -11,17 +11,17 @@ import java.util.*;
  *
  * @author murilonobrega8
  */
-public class TelaIdioma extends javax.swing.JFrame {
+public class Frame0_TelaIdioma extends javax.swing.JFrame {
 
     /**
-     * Creates new form TelaRelogio
+     * Creates new form Frame0_TelaRelogio
      */
-    public TelaIdioma() {
+    public Frame0_TelaIdioma() {
         initComponents();
         this.setLocationRelativeTo(null);
     }
 
-TelaResolucao janela3 = new TelaResolucao();
+Frame0_TelaResolucao janelaResolucao = new Frame0_TelaResolucao();
     
     /**
      * This method is called from within the constructor to initialize the form.
@@ -142,15 +142,15 @@ TelaResolucao janela3 = new TelaResolucao();
 
     private void btnSeguirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSeguirActionPerformed
         // TODO add your handling code here:
-        janela3 = new TelaResolucao();
-        janela3.setLocationRelativeTo(null);
-        janela3.setVisible(true);
+        janelaResolucao = new Frame0_TelaResolucao();
+        janelaResolucao.setLocationRelativeTo(null);
+        janelaResolucao.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnSeguirActionPerformed
 
     private void btnVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVoltarActionPerformed
         // TODO add your handling code here:
-        new TelaRelogio().show();
+        new Frame0_TelaRelogio().show();
         this.dispose();
     }//GEN-LAST:event_btnVoltarActionPerformed
 
@@ -171,21 +171,27 @@ TelaResolucao janela3 = new TelaResolucao();
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(TelaIdioma.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Frame0_TelaIdioma.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(TelaIdioma.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Frame0_TelaIdioma.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(TelaIdioma.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Frame0_TelaIdioma.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(TelaIdioma.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Frame0_TelaIdioma.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new TelaIdioma().setVisible(true);
+                new Frame0_TelaIdioma().setVisible(true);
             }
         });
     }

@@ -10,17 +10,17 @@ import java.util.Date;
  *
  * @author murilonobrega8
  */
-public class TelaRelogio extends javax.swing.JFrame {
+public class Frame0_TelaRelogio extends javax.swing.JFrame {
 
     /**
      * Creates new form TelaRelogio
      */
-    public TelaRelogio() {
+    public Frame0_TelaRelogio() {
         initComponents();
         this.setLocationRelativeTo(null);
     }
 
-TelaIdioma janela2 = new TelaIdioma();
+Frame0_TelaIdioma janelaIdioma = new Frame0_TelaIdioma();
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -36,6 +36,7 @@ TelaIdioma janela2 = new TelaIdioma();
         jLabel2 = new javax.swing.JLabel();
         lblHora = new javax.swing.JLabel();
         btnSeguir = new javax.swing.JButton();
+        btnVoltar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -71,6 +72,13 @@ TelaIdioma janela2 = new TelaIdioma();
             }
         });
 
+        btnVoltar.setText("<¬ Voltar");
+        btnVoltar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVoltarActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -79,7 +87,8 @@ TelaIdioma janela2 = new TelaIdioma();
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(btnVoltar, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btnSeguir, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(btnHora, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
@@ -103,7 +112,9 @@ TelaIdioma janela2 = new TelaIdioma();
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnHora, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(btnSeguir, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnSeguir, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE)
+                    .addComponent(btnVoltar, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
@@ -119,11 +130,17 @@ TelaIdioma janela2 = new TelaIdioma();
 
     private void btnSeguirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSeguirActionPerformed
         // TODO add your handling code here:
-        janela2 = new TelaIdioma();
-        janela2.setLocationRelativeTo(null);
-        janela2.setVisible(true);
+        janelaIdioma = new Frame0_TelaIdioma();
+        janelaIdioma.setLocationRelativeTo(null);
+        janelaIdioma.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnSeguirActionPerformed
+
+    private void btnVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVoltarActionPerformed
+        // TODO add your handling code here:
+        new Frame01_TelaOlaMundo().show();
+        this.dispose();
+    }//GEN-LAST:event_btnVoltarActionPerformed
 
     
     /**
@@ -143,20 +160,23 @@ TelaIdioma janela2 = new TelaIdioma();
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(TelaRelogio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Frame0_TelaRelogio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(TelaRelogio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Frame0_TelaRelogio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(TelaRelogio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Frame0_TelaRelogio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(TelaRelogio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Frame0_TelaRelogio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new TelaRelogio().setVisible(true);
+                new Frame0_TelaRelogio().setVisible(true);
             }
         });
     }
@@ -164,6 +184,7 @@ TelaIdioma janela2 = new TelaIdioma();
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnHora;
     private javax.swing.JButton btnSeguir;
+    private javax.swing.JButton btnVoltar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel lblHora;

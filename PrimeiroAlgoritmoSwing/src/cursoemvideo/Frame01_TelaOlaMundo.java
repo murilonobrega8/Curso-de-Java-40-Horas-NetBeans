@@ -2,21 +2,23 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package cursoemvideo.olamundo;
+package cursoemvideo;
 
 /**
  *
  * @author murilonobrega8
  */
-public class OlaMundoJava extends javax.swing.JFrame {
+public class Frame01_TelaOlaMundo extends javax.swing.JFrame {
 
     /**
      * Creates new form OlaMundoJava
      */
-    public OlaMundoJava() {
+    public Frame01_TelaOlaMundo() {
         initComponents();
         this.setLocationRelativeTo(null);
-    }  
+    }
+
+Frame0_TelaRelogio janelaRelogio = new Frame0_TelaRelogio();    
     
     /**
      * This method is called from within the constructor to initialize the form.
@@ -29,13 +31,14 @@ public class OlaMundoJava extends javax.swing.JFrame {
 
         lblMensagem = new javax.swing.JLabel();
         btnClick = new javax.swing.JButton();
+        btnFim = new javax.swing.JButton();
+        btnSeguir = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         lblMensagem.setFont(new java.awt.Font("Liberation Sans", 0, 24)); // NOI18N
         lblMensagem.setForeground(new java.awt.Color(255, 0, 0));
-        lblMensagem.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblMensagem.setText("A mensagem irá aparecer aqui!");
+        lblMensagem.setText("Bem-vindo ao Meu Primeiro App!");
         lblMensagem.setAlignmentY(0.0F);
 
         btnClick.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
@@ -46,6 +49,20 @@ public class OlaMundoJava extends javax.swing.JFrame {
             }
         });
 
+        btnFim.setText("Encerrar!");
+        btnFim.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnFimActionPerformed(evt);
+            }
+        });
+
+        btnSeguir.setText("Seguir ¬>");
+        btnSeguir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSeguirActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -53,21 +70,32 @@ public class OlaMundoJava extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(160, 160, 160)
-                        .addComponent(btnClick))
+                        .addContainerGap()
+                        .addComponent(btnFim, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnSeguir, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(71, 71, 71)
-                        .addComponent(lblMensagem)))
-                .addContainerGap(73, Short.MAX_VALUE))
+                        .addGap(58, 58, 58)
+                        .addComponent(lblMensagem)
+                        .addGap(0, 63, Short.MAX_VALUE)))
+                .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addGap(160, 160, 160)
+                .addComponent(btnClick)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(21, 21, 21)
+                .addGap(26, 26, 26)
                 .addComponent(lblMensagem)
-                .addGap(31, 31, 31)
+                .addGap(26, 26, 26)
                 .addComponent(btnClick, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(31, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnFim, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE)
+                    .addComponent(btnSeguir, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE))
+                .addGap(11, 11, 11))
         );
 
         pack();
@@ -77,6 +105,20 @@ public class OlaMundoJava extends javax.swing.JFrame {
         // TODO add your handling code here:
         lblMensagem.setText("Olá, Mundo!");
     }//GEN-LAST:event_btnClickActionPerformed
+
+    private void btnFimActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFimActionPerformed
+        // TODO add your handling code here:
+        System.exit(0);
+
+    }//GEN-LAST:event_btnFimActionPerformed
+
+    private void btnSeguirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSeguirActionPerformed
+        // TODO add your handling code here:
+        janelaRelogio = new Frame0_TelaRelogio();
+        janelaRelogio.setLocationRelativeTo(null);
+        janelaRelogio.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnSeguirActionPerformed
 
     /**
      * @param args the command line arguments
@@ -95,27 +137,31 @@ public class OlaMundoJava extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(OlaMundoJava.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Frame01_TelaOlaMundo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(OlaMundoJava.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Frame01_TelaOlaMundo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(OlaMundoJava.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Frame01_TelaOlaMundo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(OlaMundoJava.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Frame01_TelaOlaMundo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new OlaMundoJava().setVisible(true);
+                new Frame01_TelaOlaMundo().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnClick;
+    private javax.swing.JButton btnFim;
+    private javax.swing.JButton btnSeguir;
     private javax.swing.JLabel lblMensagem;
     // End of variables declaration//GEN-END:variables
 }
