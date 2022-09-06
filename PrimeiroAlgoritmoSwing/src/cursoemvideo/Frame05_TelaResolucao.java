@@ -11,15 +11,17 @@ import java.awt.Toolkit;
  *
  * @author murilonobrega8
  */
-public class Frame0_TelaResolucao extends javax.swing.JFrame {
+public class Frame05_TelaResolucao extends javax.swing.JFrame {
 
     /**
      * Creates new form TelaRelogio
      */
-    public Frame0_TelaResolucao() {
+    public Frame05_TelaResolucao() {
         initComponents();
         this.setLocationRelativeTo(null);
     }  
+    
+Frame06_TelaSoma janelaSoma = new Frame06_TelaSoma();    
     
     /**
      * This method is called from within the constructor to initialize the form.
@@ -35,9 +37,10 @@ public class Frame0_TelaResolucao extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         lblResolution = new javax.swing.JLabel();
         btnVoltar = new javax.swing.JButton();
-        btnFim = new javax.swing.JButton();
+        btnSeguir = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Lenda a Resolução de Tela do Sistema");
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Resolution.png"))); // NOI18N
@@ -71,10 +74,10 @@ public class Frame0_TelaResolucao extends javax.swing.JFrame {
             }
         });
 
-        btnFim.setText("Encerrar!");
-        btnFim.addActionListener(new java.awt.event.ActionListener() {
+        btnSeguir.setText("Seguir ¬>");
+        btnSeguir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnFimActionPerformed(evt);
+                btnSeguirActionPerformed(evt);
             }
         });
 
@@ -95,7 +98,7 @@ public class Frame0_TelaResolucao extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(btnVoltar, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnFim, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(btnSeguir, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -113,7 +116,7 @@ public class Frame0_TelaResolucao extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(btnVoltar, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
-                    .addComponent(btnFim, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(btnSeguir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -130,16 +133,17 @@ public class Frame0_TelaResolucao extends javax.swing.JFrame {
 
     private void btnVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVoltarActionPerformed
         // TODO add your handling code here:
-        this.dispose();
-        new Frame0_TelaIdioma().show();
-        new Frame0_TelaIdioma().setLocationRelativeTo(null);
-        
+        new Frame04_TelaIdioma().show();
+        this.hide();
     }//GEN-LAST:event_btnVoltarActionPerformed
 
-    private void btnFimActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFimActionPerformed
+    private void btnSeguirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSeguirActionPerformed
         // TODO add your handling code here:
-        System.exit(0);
-    }//GEN-LAST:event_btnFimActionPerformed
+        janelaSoma = new Frame06_TelaSoma();
+        janelaSoma.setLocationRelativeTo(null);
+        janelaSoma.setVisible(true);
+        this.hide();
+    }//GEN-LAST:event_btnSeguirActionPerformed
 
     /**
      * @param args the command line arguments
@@ -158,14 +162,22 @@ public class Frame0_TelaResolucao extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Frame0_TelaResolucao.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Frame05_TelaResolucao.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Frame0_TelaResolucao.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Frame05_TelaResolucao.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Frame0_TelaResolucao.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Frame05_TelaResolucao.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Frame0_TelaResolucao.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Frame05_TelaResolucao.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -178,14 +190,14 @@ public class Frame0_TelaResolucao extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Frame0_TelaResolucao().setVisible(true);
+                new Frame05_TelaResolucao().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnFim;
     private javax.swing.JButton btnResolution;
+    private javax.swing.JButton btnSeguir;
     private javax.swing.JButton btnVoltar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;

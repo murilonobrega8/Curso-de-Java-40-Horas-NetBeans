@@ -11,17 +11,17 @@ import java.util.*;
  *
  * @author murilonobrega8
  */
-public class Frame0_TelaIdioma extends javax.swing.JFrame {
+public class Frame04_TelaIdioma extends javax.swing.JFrame {
 
     /**
-     * Creates new form Frame0_TelaRelogio
+     * Creates new form Frame03_TelaRelogio
      */
-    public Frame0_TelaIdioma() {
+    public Frame04_TelaIdioma() {
         initComponents();
         this.setLocationRelativeTo(null);
     }
 
-Frame0_TelaResolucao janelaResolucao = new Frame0_TelaResolucao();
+Frame05_TelaResolucao janelaResolucao = new Frame05_TelaResolucao();
     
     /**
      * This method is called from within the constructor to initialize the form.
@@ -41,6 +41,7 @@ Frame0_TelaResolucao janelaResolucao = new Frame0_TelaResolucao();
         btnVoltar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Lendo o Idioma do Sistema");
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/globe.png"))); // NOI18N
@@ -142,16 +143,16 @@ Frame0_TelaResolucao janelaResolucao = new Frame0_TelaResolucao();
 
     private void btnSeguirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSeguirActionPerformed
         // TODO add your handling code here:
-        janelaResolucao = new Frame0_TelaResolucao();
+        janelaResolucao = new Frame05_TelaResolucao();
         janelaResolucao.setLocationRelativeTo(null);
         janelaResolucao.setVisible(true);
-        this.dispose();
+        this.hide();
     }//GEN-LAST:event_btnSeguirActionPerformed
 
     private void btnVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVoltarActionPerformed
         // TODO add your handling code here:
-        new Frame0_TelaRelogio().show();
-        this.dispose();
+        new Frame03_TelaRelogio().show();
+        this.hide();
     }//GEN-LAST:event_btnVoltarActionPerformed
 
     /**
@@ -171,14 +172,38 @@ Frame0_TelaResolucao janelaResolucao = new Frame0_TelaResolucao();
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Frame0_TelaIdioma.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Frame04_TelaIdioma.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Frame0_TelaIdioma.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Frame04_TelaIdioma.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Frame0_TelaIdioma.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Frame04_TelaIdioma.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Frame0_TelaIdioma.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Frame04_TelaIdioma.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -191,7 +216,7 @@ Frame0_TelaResolucao janelaResolucao = new Frame0_TelaResolucao();
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Frame0_TelaIdioma().setVisible(true);
+                new Frame04_TelaIdioma().setVisible(true);
             }
         });
     }

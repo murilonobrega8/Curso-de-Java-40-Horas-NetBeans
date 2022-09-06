@@ -18,7 +18,7 @@ public class Frame01_TelaOlaMundo extends javax.swing.JFrame {
         this.setLocationRelativeTo(null);
     }
 
-Frame0_TelaRelogio janelaRelogio = new Frame0_TelaRelogio();    
+Frame02_TelaSeuNome janelaSeuNome = new Frame02_TelaSeuNome();    
     
     /**
      * This method is called from within the constructor to initialize the form.
@@ -35,9 +35,11 @@ Frame0_TelaRelogio janelaRelogio = new Frame0_TelaRelogio();
         btnSeguir = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Boas Vindas!");
 
         lblMensagem.setFont(new java.awt.Font("Liberation Sans", 0, 24)); // NOI18N
         lblMensagem.setForeground(new java.awt.Color(255, 0, 0));
+        lblMensagem.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblMensagem.setText("Bem-vindo ao Meu Primeiro App!");
         lblMensagem.setAlignmentY(0.0F);
 
@@ -103,7 +105,7 @@ Frame0_TelaRelogio janelaRelogio = new Frame0_TelaRelogio();
 
     private void btnClickActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClickActionPerformed
         // TODO add your handling code here:
-        lblMensagem.setText("Olá, Mundo!");
+        lblMensagem.setText("<html><center>Olá, Mundo! Fim da Maldição</center></html>");
     }//GEN-LAST:event_btnClickActionPerformed
 
     private void btnFimActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFimActionPerformed
@@ -114,10 +116,10 @@ Frame0_TelaRelogio janelaRelogio = new Frame0_TelaRelogio();
 
     private void btnSeguirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSeguirActionPerformed
         // TODO add your handling code here:
-        janelaRelogio = new Frame0_TelaRelogio();
-        janelaRelogio.setLocationRelativeTo(null);
-        janelaRelogio.setVisible(true);
-        this.dispose();
+        janelaSeuNome = new Frame02_TelaSeuNome();
+        janelaSeuNome.setLocationRelativeTo(null);
+        janelaSeuNome.setVisible(true);
+        this.hide();
     }//GEN-LAST:event_btnSeguirActionPerformed
 
     /**

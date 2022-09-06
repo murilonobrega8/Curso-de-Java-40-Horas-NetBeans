@@ -10,17 +10,17 @@ import java.util.Date;
  *
  * @author murilonobrega8
  */
-public class Frame0_TelaRelogio extends javax.swing.JFrame {
+public class Frame03_TelaRelogio extends javax.swing.JFrame {
 
     /**
      * Creates new form TelaRelogio
      */
-    public Frame0_TelaRelogio() {
+    public Frame03_TelaRelogio() {
         initComponents();
         this.setLocationRelativeTo(null);
     }
 
-Frame0_TelaIdioma janelaIdioma = new Frame0_TelaIdioma();
+Frame04_TelaIdioma janelaIdioma = new Frame04_TelaIdioma();
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -39,6 +39,7 @@ Frame0_TelaIdioma janelaIdioma = new Frame0_TelaIdioma();
         btnVoltar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Lendo a Data e Hora do Sistema");
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Clock-Background-PNG.png"))); // NOI18N
@@ -124,22 +125,22 @@ Frame0_TelaIdioma janelaIdioma = new Frame0_TelaIdioma();
     private void btnHoraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHoraActionPerformed
         // TODO add your handling code here:
         Date relogio = new Date();
-        lblHora.setText(relogio.toString());
+        lblHora.setText("<html><center>A hora do seu sistema, é: " + relogio.toString() + "!</center></html>");
                  
     }//GEN-LAST:event_btnHoraActionPerformed
 
     private void btnSeguirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSeguirActionPerformed
         // TODO add your handling code here:
-        janelaIdioma = new Frame0_TelaIdioma();
+        janelaIdioma = new Frame04_TelaIdioma();
         janelaIdioma.setLocationRelativeTo(null);
         janelaIdioma.setVisible(true);
-        this.dispose();
+        this.hide();
     }//GEN-LAST:event_btnSeguirActionPerformed
 
     private void btnVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVoltarActionPerformed
         // TODO add your handling code here:
-        new Frame01_TelaOlaMundo().show();
-        this.dispose();
+        new Frame02_TelaSeuNome().show();
+        this.hide();
     }//GEN-LAST:event_btnVoltarActionPerformed
 
     
@@ -160,14 +161,26 @@ Frame0_TelaIdioma janelaIdioma = new Frame0_TelaIdioma();
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Frame0_TelaRelogio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Frame03_TelaRelogio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Frame0_TelaRelogio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Frame03_TelaRelogio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Frame0_TelaRelogio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Frame03_TelaRelogio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Frame0_TelaRelogio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Frame03_TelaRelogio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -176,7 +189,7 @@ Frame0_TelaIdioma janelaIdioma = new Frame0_TelaIdioma();
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Frame0_TelaRelogio().setVisible(true);
+                new Frame03_TelaRelogio().setVisible(true);
             }
         });
     }
