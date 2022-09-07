@@ -19,7 +19,7 @@ public class Frame15_TelaFatorial extends javax.swing.JFrame {
         this.setLocationRelativeTo(null);
     }
 
-/*Frame16_TelaGenio janelaGenio = new Frame16_TelaGenio();   */
+Frame16_TelaContadorFor janelaContadorFor = new Frame16_TelaContadorFor();
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -39,7 +39,7 @@ public class Frame15_TelaFatorial extends javax.swing.JFrame {
         lblImprime = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Repetição e Cálculo de Fatorial");
+        setTitle("Repetição 2 e Cálculo de Fatorial");
 
         lblText1.setFont(new java.awt.Font("Liberation Sans", 1, 14)); // NOI18N
         lblText1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -133,11 +133,10 @@ public class Frame15_TelaFatorial extends javax.swing.JFrame {
 
     private void btnSeguirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSeguirActionPerformed
         // TODO add your handling code here:
-        /*janelaGenio = new Frame16_TelaGenio();
-        janelaGenio.setLocationRelativeTo(null);
-        janelaGenio.setVisible(true);
-        this.hide();*/
-        System.exit(0);
+        janelaContadorFor = new Frame16_TelaContadorFor();
+        janelaContadorFor.setLocationRelativeTo(null);
+        janelaContadorFor.setVisible(true);
+        this.hide();
     }//GEN-LAST:event_btnSeguirActionPerformed
 
     private void txtNumStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_txtNumStateChanged
