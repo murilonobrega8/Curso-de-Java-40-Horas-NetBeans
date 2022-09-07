@@ -4,8 +4,6 @@
  */
 package cursoemvideo;
 
-import java.awt.Font;
-import java.util.Scanner;
 
 /**
  *
@@ -22,7 +20,8 @@ public class Frame13_TelaTriangulo extends javax.swing.JFrame {
         panResposta.setVisible(false);
     }
 
-    /*Frame14_TelaGenio janelaGenio = new Frame11_TelaGenio();   */
+Frame14_TelaContador janelaContador = new Frame14_TelaContador();
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -263,11 +262,10 @@ public class Frame13_TelaTriangulo extends javax.swing.JFrame {
 
     private void btnSeguirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSeguirActionPerformed
         // TODO add your handling code here:
-        /*janelaGenio = new Frame14_TelaGenio();
-        janelaGenio.setLocationRelativeTo(null);
-        janelaGenio.setVisible(true);
-        this.hide();*/
-        System.exit(0);
+        janelaContador = new Frame14_TelaContador();
+        janelaContador.setLocationRelativeTo(null);
+        janelaContador.setVisible(true);
+        this.hide();
     }//GEN-LAST:event_btnSeguirActionPerformed
 
     private void sliAStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_sliAStateChanged
