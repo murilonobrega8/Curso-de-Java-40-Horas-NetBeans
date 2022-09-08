@@ -21,7 +21,7 @@ public class Frame16_TelaContadorFor extends javax.swing.JFrame {
         this.setLocationRelativeTo(null);
     }
 
-/*Frame17_TelaFatorial janelaFatorial = new Frame17_TelaFatorial();*/
+Frame17_TelaVetor janelaVetor = new Frame17_TelaVetor();
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -224,11 +224,10 @@ public class Frame16_TelaContadorFor extends javax.swing.JFrame {
 
     private void btnSeguirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSeguirActionPerformed
         // TODO add your handling code here:
-        /*janelaGenio = new Frame17_TelaGenio();
-        janelaGenio.setLocationRelativeTo(null);
-        janelaGenio.setVisible(true);
-        this.hide();*/
-        System.exit(0);
+        janelaVetor = new Frame17_TelaVetor();
+        janelaVetor.setLocationRelativeTo(null);
+        janelaVetor.setVisible(true);
+        this.hide();
     }//GEN-LAST:event_btnSeguirActionPerformed
 
     private void sliInicioStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_sliInicioStateChanged
