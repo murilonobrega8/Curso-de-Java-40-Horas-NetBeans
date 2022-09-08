@@ -29,7 +29,7 @@ public class Frame17_TelaVetor extends javax.swing.JFrame {
         }
     }
 
-/*Frame18_TelaFatorial janelaFatorial = new Frame18_TelaFatorial();*/
+Frame18_TelaFuncao janelaFuncao = new Frame18_TelaFuncao();
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -191,11 +191,10 @@ public class Frame17_TelaVetor extends javax.swing.JFrame {
 
     private void btnSeguirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSeguirActionPerformed
         // TODO add your handling code here:
-        /*janelaGenio = new Frame18_TelaGenio();
-        janelaGenio.setLocationRelativeTo(null);
-        janelaGenio.setVisible(true);
-        this.hide();*/
-        System.exit(0);
+        janelaFuncao = new Frame18_TelaFuncao();
+        janelaFuncao.setLocationRelativeTo(null);
+        janelaFuncao.setVisible(true);
+        this.hide();
     }//GEN-LAST:event_btnSeguirActionPerformed
 
     private void btnRmvActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRmvActionPerformed
